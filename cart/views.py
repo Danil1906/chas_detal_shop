@@ -1,10 +1,8 @@
 from decimal import Decimal
 
 from django.contrib import messages
-from django.core.mail import message, send_mail
-from django.http import HttpResponseRedirect, JsonResponse
-from django.shortcuts import render, redirect, get_object_or_404
-from django.utils.safestring import mark_safe
+from django.core.mail import send_mail
+from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from mainstoreapp.models import Product, Profile, Price, Promocode, Order, OrderText
 from users.forms import PromoForm
@@ -14,9 +12,8 @@ from django.shortcuts import *
 from django.contrib.auth.models import User
 import requests
 from dadata import Dadata
-from django.views.decorators.csrf import csrf_exempt, csrf_protect
+from django.views.decorators.csrf import csrf_exempt
 
-from django.template import RequestContext
 from .sms_prosto import smsRequest
 
 

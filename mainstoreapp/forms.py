@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from captcha.fields import CaptchaField
 from phonenumber_field.formfields import PhoneNumberField
 
-from mainstoreapp.models import Profile, Product
+from mainstoreapp.models import Profile
 
 
 class ContactForm(forms.Form):
